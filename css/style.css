@@ -39,6 +39,7 @@ ul{
 /* cont */
 .con{
     position: fixed;
+    z-index: 100;
    bottom: 20px;
     right: 15px;
     background-color: goldenrod ;
