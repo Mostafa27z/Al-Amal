@@ -1,6 +1,6 @@
 :root {
-    --main: rgb(255,132,38);
-    --sec: rgb(104, 59, 43);
+    --main: black;
+    --sec: rgb(16,25,32);
     /* --main: rgb(255,132,38);
     --sec: rgb(0,48,134); */
   }
@@ -255,7 +255,7 @@ ul{
   }
   
   .flip-card-front, .flip-card-back {
-    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 14px 0 rgba(243, 240, 240, 0.2);
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -264,28 +264,37 @@ ul{
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    border: 1px solid coral;
+    border: 1px solid white;
     border-radius: 1rem;
   }
   
   .flip-card-front {
-    background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%,
-       rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
-    color: coral;
+    background: linear-gradient(120deg, rgb(16,25,32) 60%, rgb(255, 231, 222) 88%,
+       rgb(255, 211, 195) 40%, black 48%);
+    color: rgb(211, 188, 189);
   }
   
   .flip-card-back {
-    background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%,
-       bisque 40%, rgb(255, 185, 160) 78%);
+    background: linear-gradient(120deg, rgb(16,25,32) 60%, rgb(255, 231, 222) 88%,
+       rgb(255, 211, 195) 40%, black 48%);
     color: white;
     transform: rotateY(180deg);
   }
 /* ADV END */
 /* ENDING START */
 .end {
-    background-color: var(--main);
+    background-color: var(--sec);
+    
     color: white;
-    padding: 20px 0;
+    padding: 30px 0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+iframe{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
 }
 /* ENDING END */
 /* FOOTER  */
